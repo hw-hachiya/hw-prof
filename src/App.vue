@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/works">Works</router-link> |
+      <router-link to="/">Home</router-link>
+      <router-link to="/works">Works</router-link>
       <router-link to="/about">About</router-link>
     </nav>
     <router-view />
@@ -26,6 +26,15 @@ body {
   h3 {
     font-size: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
   }
+  a {
+    font-weight: bold;
+    color: #253544;
+    text-decoration: none;
+    padding: 0 10px;
+    &.router-link-exact-active {
+      color: #469fc9;
+    }
+  }
 }
 #app {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
@@ -38,13 +47,6 @@ body {
   padding: 20px;
   nav {
     padding: 20px;
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
   }
   .content {
     padding: 50px 0;
