@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HeaderComp msg="Welcome" />
+    <div class="content">
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <HeaderComp msg="Welcome" />
+    </div>
   </div>
 </template>
 
