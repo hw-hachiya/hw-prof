@@ -12,6 +12,36 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    setMeta(route) {
+      // タイトルを設定
+      if (route.meta.title) {
+        let setTitle = route.meta.title;
+        document.title = setTitle;
+      }
+      // ディスクリプションを設定
+      if (route.meta.desc) {
+        let setDesc = route.meta.desc;
+        document
+          .querySelector("meta[name='description']")
+          .setAttribute("content", setDesc);
+      }
+    },
+  },
+  mounted() {
+    let route = this.$route;
+    this.setMeta(route);
+  },
+  watch: {
+    $route(route) {
+      this.setMeta(route);
+    },
+  },
+};
+</script>
+
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@100;400&display=swap");
 
