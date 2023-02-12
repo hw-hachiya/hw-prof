@@ -23,6 +23,13 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
     meta: { title: "About このサイトについて", desc: "HWとは、連絡先など..." },
   },
+  {
+    path: "/limited/:aid",
+    name: "limited",
+    component: () => import("../views/LimitedView.vue"),
+    meta: { title: "期間限定公開", desc: "この機会をお見逃しなく！" },
+    props: true,
+  },
 ];
 
 const router = new VueRouter({

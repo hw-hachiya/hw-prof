@@ -14,17 +14,22 @@
       </svg>
       <HeaderComp msg="Welcome" />
     </div>
+    <div class="content">
+      <LimitedComp />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HeaderComp from "@/components/HeaderComp.vue";
+import LimitedComp from "@/components/LimitedComp.vue";
 
 export default {
   name: "HomeView",
   components: {
     HeaderComp,
+    LimitedComp,
   },
 };
 </script>
