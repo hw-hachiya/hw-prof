@@ -10,6 +10,17 @@
     <div class="content">
       <h1>Works 2</h1>
       <p>This is my second work.</p>
+      <button @click="clickBtn('OK')">クリック</button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    clickBtn: (e) => {
+      console.log(e);
+    },
+  },
+};
+</script>
