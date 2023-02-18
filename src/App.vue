@@ -80,6 +80,9 @@ body {
   button {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
   }
+  .long-sentence {
+    text-align: left;
+  }
 }
 #app {
   max-width: 1000px;
@@ -91,15 +94,15 @@ body {
   .content {
     padding: 50px 0;
     border-top: 1px solid #ccc;
+    .flex-region {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
   }
   .footer {
     padding: 20px;
     border-top: 1px solid #ccc;
   }
-}
-.flex-region {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 </style>

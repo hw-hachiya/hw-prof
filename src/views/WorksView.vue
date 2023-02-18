@@ -19,16 +19,16 @@
     <div class="content">
       <h2>Works</h2>
       <h3>Display Grid の表示テスト</h3>
-      <div class="container">
-        <div class="flex-region">
-          <div class="flex-inner">
-            <h4>タイトル</h4>
-            <p>グリッドの領域テストその1</p>
-          </div>
-          <div class="flex-inner">
-            <h4>タイトル</h4>
-            <p>グリッドの領域テストその2</p>
-          </div>
+      <div class="flex-region">
+        <div class="flex-region__inner">
+          <h4>タイトル</h4>
+          <p class="sentence">
+            恥の多い生涯を送って来ました。自分には、人間の生活というものが、見当つかないのです。自分は東北の田舎に生れましたので、汽車をはじめて見たのは、よほど大きくなってからでした。自分は停車場のブリッジを
+          </p>
+        </div>
+        <div class="flex-region__inner">
+          <h4>タイトル</h4>
+          <p class="sentence">吾輩は猫である。名前はまだ無い。どこで生れたか</p>
         </div>
       </div>
     </div>
@@ -53,6 +53,15 @@ export default {
     clickBtn: (e) => {
       console.log(e);
     },
+  },
+  mounted: function () {
+    let elements = document.querySelectorAll(".sentence");
+    elements.forEach(function (element) {
+      let wordLength = element.innerText.length;
+      if (wordLength > 28) {
+        element.classList.add("long-sentence");
+      }
+    });
   },
 };
 </script>
