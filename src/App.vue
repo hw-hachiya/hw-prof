@@ -48,12 +48,15 @@ export default {
 body {
   margin: 0;
   h1 {
+    // 40px-30px
     font-size: clamp(1.875rem, 1.25rem + 2vw, 2.5rem);
   }
   h2 {
+    // 32px-24px
     font-size: clamp(1.5rem, 1rem + 1.6vw, 2rem);
   }
   h3 {
+    // 24px-18px
     font-size: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
   }
   a {
@@ -64,6 +67,9 @@ body {
     &.router-link-exact-active {
       color: #469fc9;
     }
+  }
+  button {
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
   }
 }
 #app {
