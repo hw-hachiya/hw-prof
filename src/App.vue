@@ -45,7 +45,16 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@100;400&display=swap");
 
+@mixin base-color($color: #2c3e50) {
+  color: $color;
+}
+
 body {
+  @include base-color;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   margin: 0;
   h1 {
     // 40px-30px
@@ -60,8 +69,8 @@ body {
     font-size: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
   }
   a {
+    @include base-color;
     font-weight: bold;
-    color: #253544;
     text-decoration: none;
     padding: 0 10px;
     &.router-link-exact-active {
@@ -73,11 +82,6 @@ body {
   }
 }
 #app {
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   max-width: 1000px;
   margin: auto;
   padding: 20px;
@@ -92,5 +96,10 @@ body {
     padding: 20px;
     border-top: 1px solid #ccc;
   }
+}
+.flex-region {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 </style>
