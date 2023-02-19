@@ -30,6 +30,12 @@ const routes = [
     meta: { title: "期間限定公開", desc: "この機会をお見逃しなく！" },
     props: true,
   },
+  {
+    path: "/form",
+    name: "form",
+    component: () => import("../views/FormView.vue"),
+    meta: { title: "Form 入力はこちらから", desc: "画面遷移するフォーム" },
+  },
 ];
 
 const router = new VueRouter({

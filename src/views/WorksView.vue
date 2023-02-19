@@ -34,6 +34,11 @@
     </div>
     <div class="content">
       <h2>Works</h2>
+      <h3>フォームサンプル</h3>
+      <router-link to="/form">フォームはこちら</router-link>
+    </div>
+    <div class="content">
+      <h2>Works</h2>
       <h3>サンプル</h3>
       <p>This is my second work.</p>
       <button @click="clickBtn('OK')">クリック</button>

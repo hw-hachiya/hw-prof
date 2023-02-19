@@ -32,20 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.acc {
-  .btn {
-    width: 200px;
-    border: 1px solid transparent;
-    border-radius: 100px;
-    background-color: #4ac0ff;
-    cursor: pointer;
-    padding: 0.5em;
-    margin: 0.5em;
-    box-shadow: 0px 2px 3px #00000020;
-    font-size: 1rem;
-    color: #fff;
-  }
-}
 .v-enter-active {
   transition: opacity 0.5s;
 }

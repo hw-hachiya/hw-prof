@@ -80,6 +80,18 @@ body {
   button {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
   }
+  .btn {
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: #4ac0ff;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0px 2px 3px #00000020;
+    font-size: 1rem;
+    color: #fff;
+  }
   .long-sentence {
     text-align: left;
   }
