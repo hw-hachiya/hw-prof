@@ -95,6 +95,23 @@ body {
   .long-sentence {
     text-align: left;
   }
+  .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+      min-width: 10%;
+    }
+    input {
+      border: 1px solid #aaa;
+      min-width: 200px;
+      height: 2rem;
+      border-radius: 5px;
+      margin: 5px;
+      box-shadow: 2px 2px 6px #00000020 inset;
+      padding: 5px;
+    }
+  }
 }
 #app {
   max-width: 1000px;

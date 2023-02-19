@@ -61,3 +61,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.btn {
+  width: 80px;
+}
+</style>
