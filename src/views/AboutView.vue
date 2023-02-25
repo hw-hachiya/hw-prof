@@ -12,16 +12,26 @@
         <p>別のモーダルウィンドウが開きます</p>
       </ModalComp>
     </div>
+    <div class="content">
+      <ProgressBarComp></ProgressBarComp>
+    </div>
+    <div class="content">
+      <ClipBoardComp></ClipBoardComp>
+    </div>
   </div>
 </template>
 
 <script>
 import ModalComp from "@/components/ModalComp.vue";
+import ProgressBarComp from "@/components/ProgressBarComp.vue";
+import ClipBoardComp from "@/components/ClipBoardComp.vue";
 
 export default {
   name: "AboutView",
   components: {
     ModalComp,
+    ProgressBarComp,
+    ClipBoardComp,
   },
 };
 </script>
