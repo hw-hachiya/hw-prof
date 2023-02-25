@@ -1,7 +1,7 @@
 <template>
   <div class="clip-board">
     <h2>Clip Board</h2>
-    <p class="code-text">{{ code }}</p>
+    <p class="code-text">{{ codeNum }}</p>
     <button class="btn" v-on:click="clipBtn">↑コードをコピー</button>
     <p class="copied-text" v-show="show"><span>コピーしました！</span></p>
   </div>
@@ -10,9 +10,14 @@
 <script>
 export default {
   name: "ClipBoardComp",
+  props: {
+    codeNum: {
+      type: String,
+      default: "abcd1234",
+    },
+  },
   data() {
     return {
-      code: "abcd1234",
       show: false,
     };
   },
@@ -22,10 +27,7 @@ export default {
       setTimeout(() => {
         this.show = !this.show;
       }, 1500);
-      navigator.clipboard.writeText(this.code);
-      return {
-        code: this.code,
-      };
+      navigator.clipboard.writeText(this.codeNum);
     },
   },
 };

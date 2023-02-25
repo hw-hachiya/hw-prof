@@ -16,7 +16,8 @@
       <ProgressBarComp></ProgressBarComp>
     </div>
     <div class="content">
-      <ClipBoardComp></ClipBoardComp>
+      <ClipBoardComp code-num="wxyz6789"></ClipBoardComp>
+      <ClipBoardComp code-num="qqqq9999"></ClipBoardComp>
     </div>
   </div>
 </template>
