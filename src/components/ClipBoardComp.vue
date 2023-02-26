@@ -14,7 +14,7 @@ export default {
   props: {
     codeNum: {
       type: String,
-      default: "abcd1234",
+      default: "aaaa1111",
     },
   },
   data() {
