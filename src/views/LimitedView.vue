@@ -14,9 +14,7 @@ let timeGuard = function (to, from, next) {
     108: new Date(2023, 2, 12),
   };
 
-  let limit = data[to.params.aid]
-    ? data[to.params.aid]
-    : new Date(2099, 12, 31);
+  let limit = data[to.params.aid] ? data[to.params.aid] : new Date(2099, 12, 31);
 
   let current = new Date();
 
